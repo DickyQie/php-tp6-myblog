@@ -94,6 +94,11 @@ class Login extends BaseController{
 		  }
 	}
     
+	
+	public function logout(){
+		Session::delete("loginStatus");
+		redirect("login")->send();
+	}
     
     
     

@@ -1,10 +1,6 @@
 ThinkPHP 6.0
 ===============
 
-
-tp6--- 实现个人博客项目
-
-
 > 运行环境要求PHP7.1+。
 
 ## 主要新特性
@@ -54,5 +50,3 @@ All rights reserved。
 ThinkPHP® 商标和著作权所有者为上海顶想信息科技有限公司。
 
 更多细节参阅 [LICENSE.txt](LICENSE.txt)
-
-

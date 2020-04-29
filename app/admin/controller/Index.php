@@ -10,9 +10,7 @@ class Index extends Base{
     
 	  public function index() {
 		  
-		 
-		  
-		  echo Session::get("loginStatus");
+		  //echo Session::get("loginStatus");
 		  $keyword = input('keyword');
 		  if($keyword){
 			 $db = \think\facade\Db::table('zq_datalist')->where('title','like',"%$keyword%")->order('id','desc')->paginate(5);
