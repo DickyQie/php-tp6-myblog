@@ -1,0 +1,77 @@
+{include file="Common/common"/}
+<block name="main">
+<style type="text/css">
+
+	/**超出长度省略号*/
+	#tdcontent{
+	max-width: 210px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  }
+</style>
+<div id="page-wrapper" class="gray-bg dashbard-1">
+        {include file="Common/nav-header"/} <!--顶部-->
+        <div class="wrapper wrapper-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>留言列表</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="input-button">
+                                        <button class="btn btn-warning delete-all" type="button" url=""><i class="fa fa-minus "></i>&nbsp;删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--表格开始    -->
+                            <form action="" method="post" name="updateSort" id="updateSort" >
+                                <input type="hidden" name="page_num" value=""/>
+                                <div class="table-responsive">
+                                    <table class="table  table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th style="width: 35px;">
+                                                <input type="checkbox" id="checkAll" class="check-all">
+                                                <label for="checkAll"></label>
+                                            </th>
+                                            <th>ID</th>
+                                            <th>名称</th>
+                                            <th>邮箱</th>
+                                            <th>内容</th>
+                                            <th style="width: 100px">操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {volist name="data" id="vo"}
+                                            <tr>
+                                                <td>
+                                                    <input class="ids regular-checkbox" type="checkbox" value="" name="ids[]" id="check_">
+                                                    <label for="check_"></label>
+                                                </td>
+                                                <td> {$vo.id}</td>
+                                                <td> {$vo.name}</td>
+                                                <td> {$vo.email} </td>
+                                                <td id="tdcontent"> {$vo.content} </td>
+                                                <td>
+                                                    <a class="confirm" href="{:url('del',array('id'=>$vo['id']))}">删除</a>
+                                                </td>
+                                            </tr>
+										{/volist}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>
+                            <!--表格结束-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--尾部-->
+        {include file="Common/footer"/}
+    </div>
+</block>

@@ -1,0 +1,63 @@
+{include file="Common/common" }
+<block name="main">
+<style type="text/css">
+#backresumen { background: #e41635 }/* 高亮选中颜色 */
+</style>
+<div class="ibody">
+  {include file="Common/navheader"/} <!--顶部-->
+  <article>
+    <h2 class="about_h">您现在的位置是：<a href="/">首页</a>><a href="1/">个人简历</a></h2>
+    <div class="index_about">
+      <h2 class="c_titile">个人简历简单介绍，未实际开发</h2>
+      <p class="box_c"><span class="d_time">发布时间：2017-04-16</span><span>编辑：歆语</span><span>浏览（390）</span><span>评论览（14）</span></p>
+      <ul class="infos">
+        <p style="color:#31C478;font-size:22px;"><strong>Android</strong></p>
+        <p>做过电商，新闻，旅游，政务系统，生活服务等APP，H5嵌入式开发等</p>
+        <p style="color:#31C478;font-size:22px;"><strong>PHP</strong></p>
+        <p>做过前端界面，WebAPP，小程序，微商城，PHP网站独立开发，二次开发等</p>
+      </ul>
+   
+    </div>
+  </article>
+  <aside>
+    <div class="rnav">
+      <li class="rnav1 "><a href="">日记</a></li>
+      <li class="rnav2 "><a href="">欣赏</a></li>
+      <li class="rnav3 "><a href="">程序人生</a></li>
+      <li class="rnav4 "><a href="">经典语录</a></li>
+    </div>
+    <div class="ph_news">
+      <h2>
+        <p>点击排行</p>
+      </h2>
+      <ul class="ph_n">
+      	{volist name="data" id="vo"}
+      		{if condition="$vo['id'] lt 4"}
+        		<li><span class="num1">{$vo.id}</span><a href="{:url('index/blogcontent',array('id'=>$vo['id']))}">{$vo.title}</a></li>
+        		{else/}
+        		<li><span>{$vo.id}</span><a href="{:url('index/blogcontent',array('id'=>$vo['id']))}">{$vo.title}</a></li>
+        	{/if}
+     	{/volist}
+      </ul>
+       <h2>
+        <p>栏目推荐</p>
+      </h2>
+      <ul>
+       	{volist name="data" id="vo"}
+        	<li><a href="{:url('index/blogcontent',array('id'=>$vo['id']))}">{$vo.title}</a></li>
+       	{/volist}
+      </ul>
+  
+    </div>
+    <div class="copyright" style="margin-bottom:30px;">
+      <ul>
+        <p> Design by <a href="/">DanceSmile</a></p>
+        <p>蜀ICP备11002373号-1</p>
+        </p>
+      </ul>
+    </div>
+  </aside>
+   {include file="Common/footer"/} <!--顶部-->
+</div>
+</block>
+

@@ -1,0 +1,1621 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>购酒网-白酒,红酒,洋酒-货到付款,用心卖好酒</title>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="keywords" content="购酒网,GJW,购酒，网上买酒,买酒网站,买酒网,白酒,红酒,洋酒" />
+    <meta name="description" content="购酒网是一家线上酒类零售商,在线供应白酒,红酒,葡萄酒,洋酒,黄酒,啤酒,保健酒等多品类酒水.品牌授权,渠道正规,手续完备,支持货到付款.用心卖好酒." />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__staticCss/swiper.css" />
+    <link href="__PUBLIC__static/Css/index.min.css" rel="stylesheet" />
+
+    <script src="__PUBLIC__static/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="__PUBLIC__static/Scripts/perfect-scrollbar.js"></script>
+    <script src="__PUBLIC__static/Scripts/jquery.mousewheel.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__static/Css/perfect-scrollbar.css" />
+
+    <script>
+        document.domain = "gjw.com";
+    </script>
+
+    <!--右侧优惠券滑动-->
+    <style>
+        .contentHolder
+        {
+            position: relative;
+            margin: 0px auto;
+            padding: 0px;
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+            .contentHolder .content
+            {
+                width: 300px;
+                height: 720px;
+            }
+
+        .spacer
+        {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <!--头部s-->
+    
+<!--首页头部s-->
+
+		<!--顶部导航s-->
+		<div class="topNav">
+			<div class="topNavbox clearfix">
+				<div class="focusbtn fl">
+					<img src="__PUBLIC__static/__PUBLIC__static/Picture/ewms.png" width="12" height="12" alt="" /><span> 购酒网APP </span><em> ﹀</em>
+					<div class="ewm">
+						<span class="sanjiao">◆</span>
+						<img src="__PUBLIC__static/Picture/app.png"/>
+					</div>
+				</div>
+			    <ul class="navBox fr clearfix">
+			        <li class="loginReg" id="login">
+			    		
+			        </li> 
+			        <li class="line"></li>
+			        <li class="wddd navlist">
+			        	<a href="https://order.gjw.com/UserCenter/MyOrder.html" class="force_link" rel="nofollow">我的订单</a>
+			        </li>
+			        <li class="line"></li>
+			        <li class="yhzx navlist"> 
+                          
+                        	<a href="https://order.gjw.com/UserCenter/MyOrder.html" rel="nofollow">个人中心</a>          	
+                          
+			        </li>
+			        <li class="line"></li>
+			        <li class="zxkf navlist">
+			        	<a onclick="openQYSdk()" class="force_link" rel="nofollow">在线客服</a>
+			        </li>
+			        <li class="line"></li>
+                    
+			        <li class="bz navlist">
+			        	<a href="https://www.gjw.com/news/default.htm" class="force_link" rel="nofollow">购酒公告</a>
+			        </li>
+			        <li class="line"></li>
+			        <li class="bz navlist">
+			        	<a href="https://www.gjw.com/help/show.htm" class="force_link" rel="nofollow">帮助</a>
+			        </li>
+			        <li class="line"></li>
+			        <li class="tyj navlist">
+			        	<a href="https://order.gjw.com/FeedBack/default.htm"  class="force_link force_link_active" rel="nofollow">提意见</a>
+			        </li>
+			        <li class="line"></li>
+			        <li class="tel navlist">
+                        <a class="force_link force_link_active telNum"><em>☏</em> 400-722-1919</a>
+                   </li>
+			    </ul>
+			</div>
+		</div>
+		<!--顶部导航e-->
+		<!--大广告s-->
+		<div class="topAd" id="bigimg"> 
+		</div>
+		<!--大广告e-->
+		<!--图标、搜索框、购物车s-->
+		<div class="topItem">
+			<a href="https://www.gjw.com" class="fl topLogo">
+                <img src="__PUBLIC__static/Picture/logo1.jpg" alt="购酒网">
+            </a>
+            	<div class="fl topGif" id="topGif">
+		
+		</div>
+		<div class="topSearch fl">
+			<div class="clearfix" id="clearsch" style=" position:absolute; z-index:12;">
+			</div>
+			<div class="topTags clearfix" id="Hot_search"> 
+			</div>
+		</div>
+            <div class="topShopcar fr">
+            	<div class="shopcarBox">
+            		<a href="https://order.gjw.com/order/Cart.html">
+            			<em></em>
+            			<span>去购物车结算</span>
+            			<span class="rtjt">&gt;</span>
+            			<div class="itemNum">0</div>
+            		</a>
+            		
+            	</div>  
+            </div>
+		</div>
+		<!--图标、搜索框、购物车e-->
+		<!--商品导航s-->
+		<div class="itemNav clearfix">
+			<ul class="itemList fl">
+				<li id="listnav">
+					<a href="">☰ &nbsp; 全 部 分 类</a>
+					<ul class="qbfl-list">
+					<li class="yjxg-on">
+						<a href=""> 
+							<img src="__PUBLIC__static/Picture/ax-icon.png" />&nbsp;一键选购</a><em>›</em>
+						<div class="yjxg-box sec-box none" id="yijian"></div>
+							
+					</li>
+					<li class="bj-on">
+						<a href="https://www.gjw.com/baijiu">
+							<img src="__PUBLIC__static/Picture/bj-icon.png" />&nbsp;白 酒</a><em>›</em>
+						<div class="bj-box sec-box none" id="baijiu">
+						 
+						</div>
+					</li>
+					<li class="ptj-on">
+						<a href="https://www.gjw.com/putaojiu">
+							<img src="__PUBLIC__static/Picture/ptj-icon.png" />&nbsp;葡 萄 酒</a><em>›</em>
+						<div class="ptj-box sec-box none" id="putaojiu">
+							 
+						</div>
+					</li>
+					<li class="yj-on">
+						<a href="https://www.gjw.com/yangjiu">
+							<img src="__PUBLIC__static/Picture/yj-icon.png" />&nbsp;洋 酒</a><em>›</em>
+						<div class="yj-box sec-box none" id="yangjiu">
+						</div>
+					</li>
+					<li class="hj-on">
+						<a href="https://www.gjw.com/huangjiu">
+							<img src="__PUBLIC__static/Picture/hj-icon.png" />&nbsp;黄 酒</a><em>›</em>
+						<div class="hj-box sec-box none" id="huangjiu">
+							 
+						</div>
+					</li>
+					<li class="ysj-on">
+						<a href="https://www.gjw.com/qingjiu">
+							<img src="__PUBLIC__static/Picture/ysj-icon.png" />&nbsp;清 酒</a><em>›</em>
+						<div class="ysj-box sec-box none" id="ys">
+							 
+						</div>
+					</li>
+					<li class="pj-on">
+						<a href="https://www.gjw.com/list/pijiu">
+							<img src="__PUBLIC__static/Picture/pj-icon.png" />&nbsp;啤 酒</a><em>›</em>
+						<div class="pj-box sec-box none" id="pijiu">
+							
+						</div>
+					</li>
+					<li class="jjzb-on">
+						<a href="https://www.gjw.com/list/jiujujigengduo">
+							<img src="__PUBLIC__static/Picture/jjzb-icon.png" />&nbsp;酒具周边</a><em>›</em>
+						<div class="jjzb-box sec-box none" id="zb"> 
+						</div>
+					</li>
+					<li class="xp-on">
+						<a href="https://www.gjw.com/Search.html?Key=ALL">
+							<img src="__PUBLIC__static/Picture/xp-icon.png" />&nbsp;新 品</a><em>›</em>
+								<div class="jjzb-box sec-box none">
+										<div class="box-lt fl clearfix"></div>
+								</div>
+					</li>
+                        <li class="xp-on">
+						<a href="https://www.gjw.com/qingcang/default.htm">
+							<img src="__PUBLIC__static/Picture/qingcang.png" />&nbsp;清 仓</a><em>›</em>
+								<div class="jjzb-box sec-box none">
+										<div class="box-lt fl clearfix"></div>
+								</div>
+					</li>
+				</ul>
+				</li>
+				 <li><a href="https://www.gjw.com">首页</a></li>
+                        <li><a href="https://tm.gjw.com">特卖会</a></li>
+                        <li><a href="https://import.gjw.com/">跨境购</a></li>
+                        <li><a href="https://www.gjw.com/qingjiu">居酒屋</a></li>
+                        <li><a href="https://www.gjw.com/help/caigou.htm">商家采销</a></li>
+                        <li><a href="https://www.gjw.com/shoucang/default.htm">高端收藏</a></li>  
+                        <li><a href="https://www.gjw.com/Minisite/20190302/1712.htm">年份老酒</a></li>                     
+                        <li><a href="https://www.gjw.com/Minisite/20170419/1199.htm">尾货直批</a></li>
+			</ul>
+				<div class="fr" id="rigft_advertisting"> </div>
+		</div>
+		<!--商品导航e--> 
+<!--首页头部e-->
+
+
+    <!--头部e-->
+    <div class="center">
+        <style>
+    .qbfl-list
+    {
+        display: block;
+    }
+
+    .swiper-slide img
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .bjzkq-tit > .fl, .item-msg span:last-child em {
+        font-size:16px;
+    }
+    .item-msg span {
+        line-height: 56px;
+        text-indent: 0.6em;
+    }
+    .big-addbox > ul > li {
+        margin-right:37px;
+    }
+    .big-addbox ul:last-child > li {
+        margin-right:44px;
+    }
+    .big-addbox>ul>li:last-child {
+        margin: 0;
+    }
+</style>
+<script type="text/javascript">
+    //获取url参数
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+    //是否手机访问
+    var ua = navigator.userAgent;
+    var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),//iPad
+        isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),//iPhone
+        isAndroid = ua.match(/(Android)\s+([\d.]+)/),//Android
+        isMobile = isIphone || isAndroid;
+    //手机访问直接跳转到M站
+    if (isMobile) {
+        var isPC = GetQueryString("isMgjw");
+        if (isPC != "1") {//手机访问,链接中没有参数,跳转到M站
+            location.href = 'http://m.gjw.com';
+        }
+    }
+</script>
+<!--轮播-2-->
+<div style="background: #FFFFFF;">
+    <div style="border-bottom: 1px solid #EAEAEA; width: 100%;">
+        <div class="swiper-container">
+                <div class="gjw-wrapper" style="background:#74bab0">
+                    <a href="https://www.gjw.com/Minisite/20200331/2184.htm" target="_blank">
+                        <img width="1200" src="__PUBLIC__static/Picture/fff9bf3f4fe3499d8c69bf74b6f4fff1.jpg" /></a>
+                </div>
+                <div class="gjw-wrapper" style="background:#fdeab0">
+                    <a href="https://www.gjw.com/Minisite/20200304/2171.htm" target="_blank">
+                        <img width="1200" src="__PUBLIC__static/Picture/1e915d3bd23f4c698856f416fab8b1da.jpg" /></a>
+                </div>
+                <div class="gjw-wrapper" style="background:#c93f24">
+                    <a href="https://www.gjw.com/Minisite/20200303/2169.htm" target="_blank">
+                        <img width="1200" src="__PUBLIC__static/Picture/defa20c425d64e3c9d98157598e13815.jpg" /></a>
+                </div>
+                <div class="gjw-wrapper" style="background:#d8eef8">
+                    <a href="http://www.gjw.com/Minisite/20190930/2021.htm" target="_blank">
+                        <img width="1200" src="__PUBLIC__static/Picture/a2ab134b3d624d1f848c06a058a138ce.jpg" /></a>
+                </div>
+                <div class="gjw-wrapper" style="background:#222325">
+                    <a href="http://www.gjw.com/product/item-id-7889.html" target="_blank">
+                        <img width="1200" src="__PUBLIC__static/Picture/93f21293dd044f8d9e163074a37da10e.jpg" /></a>
+                </div>
+                <div class="gjw-wrapper" style="background:#030104">
+                    <a href="http://www.gjw.com/Minisite/20190722/1908.htm" target="_blank">
+                        <img width="1200" src="__PUBLIC__static/Picture/82171b1578a747c0b4e61a2f0952b497.jpg" /></a>
+                </div>
+           
+            <div  class="v6_floatAd" style="position: absolute; top: 0px; left: 50%; margin-left: 410px; z-index: 4;">
+                <div class="shine" style="width: 190px; height: 470px; overflow: hidden;opacity:0.9;">
+                    
+                        <a href="http://www.gjw.com/product/item-id-7453.htm" target="_blank"><img src="__PUBLIC__static/Picture/dea9c2fd877549d0b7e4ada9d3bfadce.jpg"> </a> 
+                        <a href="https://www.gjw.com/product/item-id-7206.htm" target="_blank"><img src="__PUBLIC__static/Picture/f02209eda0734b328c898c7cf7c08156.jpg"> </a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-note">
+            <span class="fl">
+                <img src="__PUBLIC__static/Picture/zhen-icon.png" />&nbsp;&nbsp;正品保证 放心购买 </span>
+            <span class="fl">
+                <img src="__PUBLIC__static/Picture/mian-icon.png" />&nbsp;&nbsp;满100即享全国免邮费</span>
+            <span class="fl">
+                <img src="__PUBLIC__static/Picture/pei-icon.png" />&nbsp;&nbsp;破损包赔 售后无忧</span>
+        	<a class="fr" href="http://android.myapp.com/myapp/detail.htm?apkName=com.shichuang.goujiuwang&amp;ADTAG=mobile"><img src="__PUBLIC__static/Picture/phone-icon.png"/>&nbsp;&nbsp;  APP下单更优惠</a>
+        </div>
+    </div>
+</div>
+<!--轮播-e-->
+
+<!--商品栏-->
+<div class="content"style="background: url(Images/bj.jpg) no-repeat center;">
+    <div class="big-addbox">
+        <ul class=" clearfix">
+                <li><a href="https://www.gjw.com/product/item-id-7505.htm" target="_blank">
+                    <img src="__PUBLIC__static/Picture/55f8b1a9b8fc44af95469b6c1e0a4c49.jpg" title="53度 茅台 水立方 北京 国际电影节 纪念酒 （2013年产） 500ml"/><div class="item-msg"><span class="fl">53度 茅台 水立方 北京 国际电影节 纪念酒 （2013年产） 500ml</span><span class="fr"><em>788</em>元</span></div>
+                </a></li>
+                <li><a href="http://www.gjw.com/product/item-id-7351.htm" target="_blank">
+                    <img src="__PUBLIC__static/Picture/89b429878ec94b8db47b5aa05ae9a60e.jpg" title="52度 五粮液 金色 土豪金色瓶 500ml"/><div class="item-msg"><span class="fl">52度 五粮液 金色 土豪金色瓶 500ml</span><span class="fr"><em>会员价</em>元</span></div>
+                </a></li>
+                <li><a href="https://www.gjw.com/product/item-id-7300.html" target="_blank">
+                    <img src="__PUBLIC__static/Picture/e571e5f6479c472b963c38cc3e857138.jpg" title="澳大利亚 奔富 BIN407 红葡萄酒 750ml		"/><div class="item-msg"><span class="fl">澳大利亚 奔富 BIN407 红葡萄酒 750ml		</span><span class="fr"><em>会员价</em>元</span></div>
+                </a></li>
+        </ul>
+        <ul class=" clearfix">
+                <li><a href="http://www.gjw.com/product/item-id-640.htm" target="_blank">
+                    <img src="__PUBLIC__static/Picture/64d109da18924c7ab09463efb2b1a54f.jpg" title="52度 剑南春 1000ml"/><div class="item-msg"><span class="fl">52度 剑南春 1000ml</span><span class="fr" style="line-height:56px;text-indent:0.6em"><em style="font-size:16px">768</em>元</span></div>
+                </a></li>  
+                <li><a href="https://www.gjw.com/product/item-id-8183.html" target="_blank">
+                    <img src="__PUBLIC__static/Picture/769aab9e6eff4ebd98474229c29f3545.jpg" title="52度 洋河 梦之蓝（M6+）550ml"/><div class="item-msg"><span class="fl">52度 洋河 梦之蓝（M6+）550ml</span><span class="fr" style="line-height:56px;text-indent:0.6em"><em style="font-size:16px">788</em>元</span></div>
+                </a></li>  
+                <li><a href="http://www.gjw.com/product/item-id-7629.htm" target="_blank">
+                    <img src="__PUBLIC__static/Picture/07ff5ef140434e5f803fbd77e7c91004.jpg" title="53度 国台 国标酒 500ml"/><div class="item-msg"><span class="fl">53度 国台 国标酒 500ml</span><span class="fr" style="line-height:56px;text-indent:0.6em"><em style="font-size:16px">599</em>元</span></div>
+                </a></li>  
+                <li><a href="https://www.gjw.com/Product/item-ID-5923.htm" target="_blank">
+                    <img src="__PUBLIC__static/Picture/6fbc38addbe640f6b28ad3a85a640c90.jpg" title="法国 拉菲 珍藏波尔多 红葡萄酒750ml*6瓶【整箱装】		"/><div class="item-msg"><span class="fl">法国 拉菲 珍藏波尔多 红葡萄酒750ml*6瓶【整箱装】		</span><span class="fr" style="line-height:56px;text-indent:0.6em"><em style="font-size:16px">429</em>元</span></div>
+                </a></li>  
+        </ul>
+    </div>
+    </div>
+<div style="background:#f5f5f5">
+    <div class="bjzkq-box" style="margin-top:0">
+        <div class="ptj-tit">
+            <span class="fl">茅台酒超值区</span>
+            <a class="fr lookall" target="_blank" href="https://www.gjw.com/list/baijiu-maotai">查看全部&nbsp;<em>＞</em></a>
+        </div>
+        <div class="ptj-list mtzkq-box clearfix">
+            <div class="ptj-lt fl">
+                    <a href="http://www.gjw.com/product/item-id-7935.htm" target="_blank">
+                        <img src="__PUBLIC__static/Picture/a9bf7f03032f4432bcbda21fe9b08286.jpg"/></a>
+                    <a href="https://www.gjw.com/product/item-id-8153.htm" target="_blank">
+                        <img src="__PUBLIC__static/Picture/9b3b605fe2b14970a06baee5a22a5685.jpg"/></a>
+            </div>
+            <div class="ptj-rt fr">
+                <ul>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7536.html" target="_blank">
+                                 <div class="item-style">幽雅细腻</div>
+                                <img src="__PUBLIC__static/Picture/286d8851f3a0417fb9520d6419b31c79.jpg"/>
+                                <div class="item-name">53度 茅台 王子酒 金王子 （ 2020年产 ）500ml </div>
+                             
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-6655.htm" target="_blank">
+                                 <div class="item-style">酱酒世家 </div>
+                                <img src="__PUBLIC__static/Picture/ec5b4f2e04354b4cb2550430142300ff.jpg"/>
+                                <div class="item-name">53度 茅台 赖茅（传承）蓝色 （ 2018年产 ）500ml </div>
+                             
+                                <div class="item-pri">319 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-8147.htm" target="_blank">
+                                 <div class="item-style">珍品王子</div>
+                                <img src="__PUBLIC__static/Picture/a5daa527bf1f45bf8e56179368121f4c.jpg"/>
+                                <div class="item-name">53度 茅台 珍品王子酒 (2020年产) 500ml </div>
+                             
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-8030.html" target="_blank">
+                                 <div class="item-style">茅台酒质 </div>
+                                <img src="__PUBLIC__static/Picture/23e424ac70c5444dad4b81662c43c29c.jpg"/>
+                                <div class="item-name">53度 茅台飞天 迎宾酒 （2019年产）500ml </div>
+                             
+                                <div class="item-pri">499 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-7329.htm" target="_blank">
+                                 <div class="item-style">醇香记忆</div>
+                                <img src="__PUBLIC__static/Picture/41e5413149e84c4080e62e5c42c13cba.jpg"/>
+                                <div class="item-name">53度 茅台 贵州大曲酒 70年代 （ 2019年产 ）500ml </div>
+                             
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7317.html" target="_blank">
+                                 <div class="item-style">峥嵘岁月 </div>
+                                <img src="__PUBLIC__static/Picture/b4a4b788a0234fdd8caf73ea7a4641b4.jpg"/>
+                                <div class="item-name">53度 茅台 遵义1935酒 （ 2020年产 ）500ml </div>
+                             
+                                <div class="item-pri">568 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-7832.htm" target="_blank">
+                                 <div class="item-style">戊戌狗年</div>
+                                <img src="__PUBLIC__static/Picture/318176e5a3854915bcc492409a98d30c.jpg"/>
+                                <div class="item-name">53度 茅台王子 己亥猪年酒 （ 2019年产 ）500ml </div>
+                             
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7951.html" target="_blank">
+                                 <div class="item-style">绅士级</div>
+                                <img src="__PUBLIC__static/Picture/4dd4bfaef2aa40b2a2b1af29de5837f7.jpg"/>
+                                <div class="item-name">53度 茅台 高尔夫酒 绅士级 ( 2017年产 ) 500ml </div>
+                             
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="bjzkq-box nfzkq-box">
+        <div class="ptj-tit">
+            <span class="fl">年份老酒专区</span>
+            <a class="fr lookall" target="_blank" href="https://www.gjw.com/Search.html?Key=%E5%B9%B4%E4%BA%A7">查看全部&nbsp;<em>＞</em></a>
+        </div>
+        <div class="ptj-list nfjzkq-box clearfix">
+            <div class="ptj-lt fl">
+                    <a href="https://www.gjw.com/product/item-id-2304.htm" target="_blank">
+                        <img src="__PUBLIC__static/Picture/3492a69490f5437f99543a10a9bc3061.jpg"/></a>
+                    <a href="http://www.gjw.com/product/item-id-3866.htm" target="_blank">
+                        <img src="__PUBLIC__static/Picture/fde6903edbc0448da25e14a5719b78f6.jpg"/></a>
+            </div>
+            <div class="ptj-rt fr">
+                <ul>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-7788.htm" target="_blank">
+                                 <div class="item-style">坛藏精品</div>
+                                <img src="__PUBLIC__static/Picture/bb5a4b1556f343129ab8648bb4ddd194.jpg"/>
+                                <div class="item-name">54度 董酒 坛藏精品 （2018年产）500ml </div>
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-8051.htm" target="_blank">
+                                 <div class="item-style">五粮真藏 </div>
+                                <img src="__PUBLIC__static/Picture/095beb6946714b0cbbc5dee8a8590883.jpg"/>
+                                <div class="item-name">52度 五粮液 真藏 （2013年产）500ml </div>
+                                <div class="item-pri">959 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-1473.html" target="_blank">
+                                 <div class="item-style">立减59</div>
+                                <img src="__PUBLIC__static/Picture/eadb5e7644ad487db3e196a7e1def254.jpg"/>
+                                <div class="item-name">52度 文君酒（2014年产） 500ml </div>
+                                <div class="item-pri">378 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-1312.htm" target="_blank">
+                                 <div class="item-style">五粮老酒 </div>
+                                <img src="__PUBLIC__static/Picture/31fe84d561cc4538a5bfbce52832832a.jpg"/>
+                                <div class="item-name">53度 五粮液股份 永福酱酒（十年）（2011年产）500ml </div>
+                                <div class="item-pri">248 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7982.htm" target="_blank">
+                                 <div class="item-style">酒中珍品 </div>
+                                <img src="__PUBLIC__static/Picture/6f0a4390084246bab4c22ca996a34dd6.jpg"/>
+                                <div class="item-name">53度 珍酒 经典1975（金）（ 2019年产 ） 500ml </div>
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-2512.htm" target="_blank">
+                                 <div class="item-style">十年陈酿 </div>
+                                <img src="__PUBLIC__static/Picture/78f2e0a025044be1861562b13a33daad.jpg"/>
+                                <div class="item-name">55度 古井贡酒 十年陈酿（曹操瓶） （2012年产）750ml </div>
+                                <div class="item-pri">345 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7179.html" target="_blank">
+                                 <div class="item-style">习水特曲 </div>
+                                <img src="__PUBLIC__static/Picture/f82c2fa3282643b5b5e78141d05ce913.jpg"/>
+                                <div class="item-name">52度 习酒 习水特曲 T6 （2013年产）500ml </div>
+                                <div class="item-pri">199 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-8155.htm" target="_blank">
+                                 <div class="item-style">下单减70</div>
+                                <img src="__PUBLIC__static/Picture/a716a8e3650e4a369bad77b801c494c0.jpg"/>
+                                <div class="item-name">53度 茅台 赖茅 金樽（2018年产） 500ml </div>
+                                <div class="item-pri">419 元</div>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--白酒折扣区-->
+    <div class="bjzkq-box">
+        <div class="bjzkq-tit">
+            <span class="fl">白酒折扣区</span>
+            <a class="fr lookall" href="https://www.gjw.com/list/baijiu">查看全部&nbsp;<em>＞</em></a>
+        </div>
+        <div class="bjzkq-list bjzkq-box clearfix">
+            <div class="ptj-lt fl">
+                    <a href="http://www.gjw.com/product/item-id-6899.htm" target="_blank">
+                        <img src="__PUBLIC__static/Picture/1d4cd9cb5ff144bfa8c72b163dddc9cf.jpg"/></a>
+                    <a href="http://www.gjw.com/product/item-id-3706.htm" target="_blank">
+                        <img src="__PUBLIC__static/Picture/810fadb217dd44b1a4a0461afe32b6a6.jpg"/></a>
+            </div>
+            <div class="bjzkq-rt fr">
+                <ul>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-7447.htm" target="_blank">
+
+                                 <div class="item-style">历练时光 </div>
+                               
+                                <img src="__PUBLIC__static/Picture/9913a3a874d141f9bc69df1d406e9d55.jpg"/>
+                                 <div class="item-name">52度 水井坊 典藏大师版 500ml </div>
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-389.htm" target="_blank">
+
+                                 <div class="item-style">神采飞扬 </div>
+                               
+                                <img src="__PUBLIC__static/Picture/b939fc5d0a104389a01dae282aac469a.jpg"/>
+                                 <div class="item-name">53度 郎酒 10年 红花郎 500ml </div>
+                                <div class="item-pri">358 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-663.htm" target="_blank">
+
+                                 <div class="item-style">天益老号</div>
+                               
+                                <img src="__PUBLIC__static/Picture/7676b55437e04dd5aff420174d3bffc8.jpg"/>
+                                 <div class="item-name">52度 剑南春 天益老号珍藏级 500ml </div>
+                                <div class="item-pri">549 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-7252.htm" target="_blank">
+
+                                 <div class="item-style">精美大坛</div>
+                               
+                                <img src="__PUBLIC__static/Picture/9f848c1002e34dbca82de3871b4ca1ac.jpg"/>
+                                 <div class="item-name">53度 习酒 古韵酱香 珍藏级 5000ml </div>
+                                <div class="item-pri">2499 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-1960.htm" target="_blank">
+
+                                 <div class="item-style"> 回忆往事 </div>
+                               
+                                <img src="__PUBLIC__static/Picture/6d1b553a60bd41669e416abfbd23760f.jpg"/>
+                                 <div class="item-name">52度 水井坊 往事 500ml </div>
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-7677.htm" target="_blank">
+
+                                 <div class="item-style">限量生产 </div>
+                               
+                                <img src="__PUBLIC__static/Picture/3e820ccd7f704b02a61f2d2b7a70b464.jpg"/>
+                                 <div class="item-name">53度 郎酒 改革开放 四十周年 纪念酒 500ml </div>
+                                <div class="item-pri">207 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-7066.htm" target="_blank">
+
+                                 <div class="item-style">无上妙品 </div>
+                               
+                                <img src="__PUBLIC__static/Picture/460220418ccf49d7b5a545948d3b9875.jpg"/>
+                                 <div class="item-name">52度 红坛酒鬼酒（高度柔和）500ml  </div>
+                                <div class="item-pri">359 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.gjw.com/product/item-id-4759.htm" target="_blank">
+
+                                 <div class="item-style">纯粮固态</div>
+                               
+                                <img src="__PUBLIC__static/Picture/514c5ece5fc14aff8c00a7788ce29da8.jpg"/>
+                                 <div class="item-name">54度 董酒 国密 畅享10 500ml </div>
+                                <div class="item-pri">289 元</div>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bjzkq-box ">
+        <div class="ptj-tit">
+            <span class="fl">葡萄酒超值区</span>
+            <a class="fr lookall" target="_blank" href="https://www.gjw.com/list/putaojiu">查看全部&nbsp;<em>＞</em></a>
+        </div>
+        <div class="ptj-list ptjzkq-box clearfix">
+            <div class="ptj-lt fl">
+                    <a href="https://www.gjw.com/product/item-id-7476.html" target="_blank">
+                        <img src="__PUBLIC__static/Picture/14d631a8d2844bb382d6d1e6d98b2f4a.jpg"/></a>
+                    <a href="https://www.gjw.com/product/item-id-5938.html" target="_blank">
+                        <img src="__PUBLIC__static/Picture/ca38ddef2ca3458f927dbe053dc40456.jpg"/></a>
+            </div>
+            <div class="ptj-rt fr">
+                <ul>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7901.htm" target="_blank">
+                                 <div class="item-style">法国直采</div>
+                                <img src="__PUBLIC__static/Picture/58ca9542b8de4e2d863476dbd372a58a.jpg"/>
+                                 <div class="item-name">法国 神之水滴 瑞隆酒庄 Chateau Reynon 红葡萄酒 750ml		 </div>
+                                <div class="item-pri">150 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7278.htm" target="_blank">
+                                 <div class="item-style">任性好价</div>
+                                <img src="__PUBLIC__static/Picture/9ccd70fa46014dfd9e9b1ca64e6e4591.jpg"/>
+                                 <div class="item-name">法国 香奈 赤霞珠西拉 红葡萄酒 精装 750ml		 </div>
+                                <div class="item-pri">59 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7122.htm" target="_blank">
+                                 <div class="item-style">以酒惠友</div>
+                                <img src="__PUBLIC__static/Picture/871579b896b14a2cb3d5462dc25ebd1d.jpg"/>
+                                 <div class="item-name">智利 拉菲 特级华诗歌 干红葡萄酒 2013年 750ml		 </div>
+                                <div class="item-pri">139 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-4322.html" target="_blank">
+                                 <div class="item-style">整箱钜惠</div>
+                                <img src="__PUBLIC__static/Picture/5c728a853c6c457e89dc7a263641ada7.jpg"/>
+                                 <div class="item-name">澳大利亚 奔富 洛神山庄 红葡萄酒 750ml*6瓶【整箱装】		 </div>
+                                <div class="item-pri">238 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7302.html" target="_blank">
+                                 <div class="item-style">实力好价</div>
+                                <img src="__PUBLIC__static/Picture/f0d8c77c7d6e45c2b50c72182529088d.jpg"/>
+                                 <div class="item-name">澳大利亚 黄尾袋鼠 赤霞珠红葡萄酒 750ml*6瓶 【整箱装】		 </div>
+                                <div class="item-pri">299 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/Item-ID-7476.htm" target="_blank">
+                                 <div class="item-style">澳洲佳酿</div>
+                                <img src="__PUBLIC__static/Picture/1d22a5492a81401dac8fb09c21853a3e.jpg"/>
+                                 <div class="item-name">澳大利亚 奔富 BIN389 红葡萄酒750ml		 </div>
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-4405.htm" target="_blank">
+                                 <div class="item-style">木盒珍藏</div>
+                                <img src="__PUBLIC__static/Picture/155e85a5332841b6bb4c648bd0b47a3d.jpg"/>
+                                 <div class="item-name">中国 张裕 卡斯特 蛇龙珠 特选级红葡萄酒（木盒装） 750ml		 </div>
+                                <div class="item-pri">288 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7259.html" target="_blank">
+                                 <div class="item-style">整箱好价</div>
+                                <img src="__PUBLIC__static/Picture/6e422fd6164b42208a8a79c1b2238ffe.jpg"/>
+                                 <div class="item-name">智利 拉菲 华诗歌 红葡萄酒 750ml*6瓶【整箱装】		 </div>
+                                <div class="item-pri">468 元</div>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--洋酒热卖区-->
+    <div class="bjzkq-box">
+        <div class="ptj-tit">
+            <span class="fl">洋酒热卖区</span>
+            <a class="fr lookall" target="_blank"  href="https://www.gjw.com/list/yangjiu">查看全部&nbsp;<em>＞</em></a>
+        </div>
+        <div class="ptj-list yjrmq-box clearfix">
+            <div class="ptj-lt fl">
+                <a href="https://www.gjw.com/product/item-id-7499.html" target="_blank">
+                    <img src="__PUBLIC__static/Picture/4b6af2d3023949bcba84e2bdb5c3ca59.jpg"/></a>
+            </div>
+            <div class="ptj-rt fr">
+                <ul>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-222.htm" target="_blank">
+                                 <div class="item-style">法式洋酒</div>
+                                <img src="__PUBLIC__static/Picture/95ca66f71eb347b6b2c416014805fbf6.jpg"/>
+                                 <div class="item-name">法国 马爹利 名士 干邑白兰地 700ml		 </div>
+                                <div class="item-pri">会员价 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-2503.htm" target="_blank">
+                                 <div class="item-style">正品行货</div>
+                                <img src="__PUBLIC__static/Picture/748ea7ddda9e40129eca39fbb57c1d69.jpg"/>
+                                 <div class="item-name">轩尼诗Hennessy 新点 干邑白兰地 700ml		 </div>
+                                <div class="item-pri">269 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-3832.htm" target="_blank">
+                                 <div class="item-style">买一送一</div>
+                                <img src="__PUBLIC__static/Picture/74c832ca68644f9aad17f348e6a22ee1.jpg"/>
+                                 <div class="item-name">英国 剑威 苏格兰威士忌 700ml		 </div>
+                                <div class="item-pri">108 元</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gjw.com/product/item-id-7500.html" target="_blank">
+                                 <div class="item-style">原瓶进口</div>
+                                <img src="__PUBLIC__static/Picture/b87112533d434a42a6ad56945275829e.jpg"/>
+                                 <div class="item-name">美国 杰克丹尼 田纳西州威士忌 蜂蜜味力娇酒（配制酒）700ml		 </div>
+                                <div class="item-pri">158 元</div>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--店长推荐-->
+        <div class="dztj-box">	
+        <div class="dztj-tit">
+    	    <span class="fl">店长推荐</span>
+        </div>
+        <div class="dztj-list">
+        	<div class="swiper-container-dztj">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide">
+
+        			<li>
+        				<a href="http://www.gjw.com/product/item-id-7709.htm" target="_blank">
+        				   
+                            <img class="imgno" src="__PUBLIC__static/Picture/4ef9a352165b4379ab3f3096f214cb13.jpg"/>
+        				        <div class="dztj-name">53度 茅台 贵州大曲 戊戌狗年酒 （ 2018年产 ）2500ml</div>
+        				        <div class="dztj-pri">1150 元</div>
+        				        <div class="dztj-hpnum">36 人好评</div>
+        				    </a>
+                    	</li>        			<li>
+        				<a href="http://www.gjw.com/Product/item-ID-8051.htm" target="_blank">
+        				   
+                            <img class="imgno" src="__PUBLIC__static/Picture/ef1da50a10fb485e878cbd707f5859ce.jpg"/>
+        				        <div class="dztj-name">52度 五粮液 真藏 （2013年产）500ml</div>
+        				        <div class="dztj-pri">959 元</div>
+        				        <div class="dztj-hpnum">5 人好评</div>
+        				    </a>
+                    	</li>        			<li>
+        				<a href="http://www.gjw.com/product/item-id-663.htm" target="_blank">
+        				   
+                            <img class="imgno" src="__PUBLIC__static/Picture/730fa46abd864c1e8b7abad610cf4368.jpg"/>
+        				        <div class="dztj-name">52度 剑南春 天益老号珍藏级 500ml</div>
+        				        <div class="dztj-pri">549 元</div>
+        				        <div class="dztj-hpnum">318 人好评</div>
+        				    </a>
+                    	</li>        			<li>
+        				<a href="https://www.gjw.com/Product/item-ID-7944.htm" target="_blank">
+        				   
+                            <img class="imgno" src="__PUBLIC__static/Picture/aee20aa14c334b4284a453e135652b3e.jpg"/>
+        				        <div class="dztj-name">54度 鸭溪窖酒 500ml</div>
+        				        <div class="dztj-pri">49 元</div>
+        				        <div class="dztj-hpnum">0 人好评</div>
+        				    </a>
+                    	</li>        			<li>
+        				<a href="http://www.gjw.com/product/item-id-2528.htm" target="_blank">
+        				   
+                            <img class="imgno" src="__PUBLIC__static/Picture/e577c561c462413295976a8814ba03e6.jpg"/>
+        				        <div class="dztj-name">52度 酒鬼 精品酒鬼 500ml</div>
+        				        <div class="dztj-pri">246 元</div>
+        				        <div class="dztj-hpnum">111 人好评</div>
+        				    </a>
+                    	</li>        			<li>
+        				<a href="https://www.gjw.com/product/item-id-7634.html" target="_blank">
+        				   
+                            <img class="imgno" src="__PUBLIC__static/Picture/ecffa8196c63476fa98ecb257e037ecc.jpg"/>
+        				        <div class="dztj-name">科罗娜 特级啤酒 330ml*24【整箱装】</div>
+        				        <div class="dztj-pri">168 元</div>
+        				        <div class="dztj-hpnum">0 人好评</div>
+        				    </a>
+                    	</li>                     
+                    </ul>
+                    <ul class="swiper-slide">
+        			<li>
+        				<a href="https://www.gjw.com/product/item-id-7634.html" target="_blank">
+        				    
+                            <img class="imgno" src="__PUBLIC__static/Picture/ecffa8196c63476fa98ecb257e037ecc.jpg"/>
+        				        <div class="dztj-name">科罗娜 特级啤酒 330ml*24【整箱装】</div>
+        				        <div class="dztj-pri">168 元</div>
+        				        <div class="dztj-hpnum">0 人好评</div>
+        				    </a>
+                    	</li>        			<li>
+        				<a href="http://www.gjw.com/product/item-id-7905.html" target="_blank">
+        				    
+                            <img class="imgno" src="__PUBLIC__static/Picture/93aecfadc84a4b6db664c90fdca174d8.jpg"/>
+        				        <div class="dztj-name">法国 1855列级名庄 二级庄 玛歌产区 杜霍城堡 红葡萄酒 750ml</div>
+        				        <div class="dztj-pri">560 元</div>
+        				        <div class="dztj-hpnum">0 人好评</div>
+        				    </a>
+                    	</li>        			<li>
+        				<a href="http://www.gjw.com/product/item-id-7903.html" target="_blank">
+        				    
+                            <img class="imgno" src="__PUBLIC__static/Picture/6dae5d2436fa4651aa9bf9afa5a99894.jpg"/>
+        				        <div class="dztj-name">法国 中级庄 上梅多克产区 帝龙酒庄 红葡萄酒 750ml</div>
+        				        <div class="dztj-pri">109 元</div>
+        				        <div class="dztj-hpnum">1 人好评</div>
+        				    </a>
+                    	</li>        			<li>
+        				<a href="http://www.gjw.com/product/item-id-7956.html" target="_blank">
+        				    
+                            <img class="imgno" src="__PUBLIC__static/Picture/1e91360a2f2940d88a86f60112a0b706.jpg"/>
+        				        <div class="dztj-name">日本 三得利 suntory 十四代 龍泉纯米大吟酿 720ml</div>
+        				        <div class="dztj-pri">34588 元</div>
+        				        <div class="dztj-hpnum">0 人好评</div>
+        				    </a>
+                    	</li>        			<li>
+        				<a href="http://www.gjw.com/product/item-id-7936.html" target="_blank">
+        				    
+                            <img class="imgno" src="__PUBLIC__static/Picture/181866ad9d654daaa8fad8a3eeac4c3a.jpg"/>
+        				        <div class="dztj-name">法国 1855年列级名庄 二级庄 力士金庄园 干红葡萄酒 2012 750ml</div>
+        				        <div class="dztj-pri">888 元</div>
+        				        <div class="dztj-hpnum">1 人好评</div>
+        				    </a>
+                    	</li>                    </ul>
+
+                </div>
+                <div class="swiper-button-prev prevbtn2"></div>
+                <div class="swiper-button-next netxbtn2"></div>
+                </div>
+           </div>
+    </div>
+    <!--酒友热评-->
+
+    <div class="jyrp-box">
+        <div class="jyrp-tit">
+            <span class="fl">酒友热评商品</span>
+        </div>
+        <div class="jyrp-list clearfix">
+                <li>
+                    <a href="https://www.gjw.com/product/item-id-2304.htm" target="_blank">
+                        <img src="__PUBLIC__static/Picture/a32539c3cbe3430d9e2453b5727ab885.jpg"/>
+                        <div class="rp-msg">
+                            <p class="rp-note">茅台酱香经典，口感酱香柔和，味道很赞，哥们都说好喝，价格也挺实惠，好评！</p>
+                            <span class="rp-add">来自159***3122的评价</span>
+                            <span class="rp-name">53度 茅台王子 酱香经典 （ 2019年产 ） 500ml</span><span class="rp-pri">468 元</span>
+                        </div>
+                    </a>
+                </li>                <li>
+                    <a href="https://www.gjw.com/product/item-id-7945.htm" target="_blank">
+                        <img src="__PUBLIC__static/Picture/6aac922d18554c3ea0711256a2b38e03.jpg"/>
+                        <div class="rp-msg">
+                            <p class="rp-note">在购酒网买酒还是很实惠的，买过几次，几个年份的口感都不错，这次试试16年的，速度很快，好评</p>
+                            <span class="rp-add">来自139***4104的评价</span>
+                            <span class="rp-name">法国 十字木桐 古堡红葡萄酒 2016 750ml</span><span class="rp-pri">298 元</span>
+                        </div>
+                    </a>
+                </li>                <li>
+                    <a href="https://www.gjw.com/product/item-id-7788.htm" target="_blank">
+                        <img src="__PUBLIC__static/Picture/00ff7510dc76449abf5961e06a51548a.jpg"/>
+                        <div class="rp-msg">
+                            <p class="rp-note">这款董酒包装精美，送礼很有面子，喝起来董香味十足，不错。</p>
+                            <span class="rp-add">来自182***2942的评价</span>
+                            <span class="rp-name">54度 董酒 坛藏精品 （2018年产）500ml</span><span class="rp-pri">298 元</span>
+                        </div>
+                    </a>
+                </li>                <li>
+                    <a href="https://www.gjw.com/product/item-id-1196.htm" target="_blank">
+                        <img src="__PUBLIC__static/Picture/5af0ed3611e341b3be694111189d6638.jpg"/>
+                        <div class="rp-msg">
+                            <p class="rp-note">趁着做活动买了几瓶，价格很实惠啊，口感也很好，推荐，不错</p>
+                            <span class="rp-add">来自186***3101的评价</span>
+                            <span class="rp-name">意大利 仙山露 红味美思 配制酒 1000ml</span><span class="rp-pri">80 元</span>
+                        </div>
+                    </a>
+                </li>        </div>
+    </div>
+    <!--视频-->
+    <div class="sp-box">
+        <div class="sp-tit">
+            <span class="fl">视频</span>
+        </div>
+        <div class="sp-list clearfix">
+                <li data-title="购酒网（上海）供应链管理总部简介:酒类全品类供应链管理专家" data-sr="https://static.gjw.com//video/4.mp4">
+                    <a target="_blank" href="/Home/video?id=1" >
+                        
+                        <img src="__PUBLIC__static/Picture/1_11.jpg"/>
+                        <span class="sp-name">购酒网（上海）供应链管理总部简介</span>
+                      
+                        <div class="playicon">▶</div>
+                    </a>
+                </li> 
+                <li data-title="五粮迎宾酒  诚迎天下客:购酒网&amp;五粮液战略单品" data-sr="https://static.gjw.com//video/3.mp4">
+                    <a target="_blank" href="/Home/video?id=2" >
+                        
+                        <img src="__PUBLIC__static/Picture/1_13.jpg"/>
+                        <span class="sp-name">五粮迎宾酒  诚迎天下客</span>
+                      
+                        <div class="playicon">▶</div>
+                    </a>
+                </li> 
+                <li data-title="茅台镇舒心酱酒微电影:老百姓喜爱的好酱酒" data-sr="https://static.gjw.com//video/2.mp4">
+                    <a target="_blank" href="/Home/video?id=3" >
+                        
+                        <img src="__PUBLIC__static/Picture/1_15.jpg"/>
+                        <span class="sp-name">茅台镇舒心酱酒微电影</span>
+                      
+                        <div class="playicon">▶</div>
+                    </a>
+                </li> 
+                <li data-title="一分钟教你如何把茶调成高逼格鸡尾酒:无敌炫酷D炸天" data-sr="https://static.gjw.com//video/1.mp4">
+                    <a target="_blank" href="/Home/video?id=4" >
+                        
+                        <img src="__PUBLIC__static/Picture/1_17.jpg"/>
+                        <span class="sp-name">一分钟教你如何把茶调成高逼格鸡尾酒</span>
+                      
+                        <div class="playicon">▶</div>
+                    </a>
+                </li> 
+        </div>
+    </div> 
+    </div>
+    	<!--首页头部s-->
+	<div class="fixedSch_box" style="top: 0px;">
+    <div class="mid_box">
+        <a href="" class="fixedSch_logo">
+            <img src="__PUBLIC__static/Picture/whitelogo.png" alt="" class="fl">
+        </a>
+        <div class="fixedSch_schBox fl" id="fixSch">
+            
+        </div>
+    </div>
+</div>
+
+    	<script>
+    	    $(window).scroll(function () {
+    	        var nav = $('.nav-note').offset().top - $(document).scrollTop()
+    	        if (nav < -102) {
+    	            $(".fixedSch_box").css("display", "block");
+    	        } else {
+    	            $(".fixedSch_box").css("display", "none")
+    	        }
+    	    })
+	</script>
+
+    </div>
+
+    <!--尾部-s-->
+    <div class="v6_footer v6_clear">
+          <div class="footerMid" >
+                <div class="footerMid_t footer_center" style="height: 163px;">
+                    <div alt="" class="footer_tel fl png_bg" style="margin-top: 60px;">
+                    </div>
+            
+                    <a onclick="openQYSdk()" target="_blank" class="footer_serv fl" rel="nofollow" style="margin-top: 100px;">
+                        <img src="__PUBLIC__static/Picture/onlineserv.png" alt="" class="png_bg" style="cursor: pointer;">
+                    </a>
+					
+                    <div class="fr qrCodeBox">
+                        <p class="fl"  style=" height: 130px;vertical-align: middle;margin-top: 30px;line-height: 2;margin-right: 0px;">
+                            超万平方米仓储体验店<br>
+                            上海松江区茂盛路202弄18号<br>
+                            客服邮箱：kf@goujiuwang.com<br>
+                            
+                        </p>
+                        <div class="fr" style="color: white;width: 193px;text-align: -webkit-center;">
+                            <img alt="" class="footer_qrCode" src="__PUBLIC__static/Picture/qrcode_06.jpg" original="/Images/qrcode_06.jpg" style="display:block; width:120px; height:120px">
+                             <br>扫码二维码  享更多手机专享优惠</div>
+                    </div>
+                </div>
+                <div class="footer_link footer_center" style="margin-top: 20px;">
+                    <dl class="firstDl">
+                        <dt><b class="zhinan"></b>新手指南</dt>
+                
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-47.htm" rel="nofollow">
+                                        用户协议</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-42.htm" rel="nofollow">
+                                        常见问题</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-39.htm" rel="nofollow">
+                                        网站购物流程</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-48.htm" rel="nofollow">
+                                        会员制度</a>
+                                </dd>
+                    
+                    </dl>
+                    <dl>
+                        <dt><b class="zhinan"></b>如何付款</dt>
+                
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-4.htm" rel="nofollow">
+                                        如何付款</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-5.htm" rel="nofollow">
+                                        发票制度说明</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-43.htm" rel="nofollow">
+                                        电子券说明</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-53.htm" rel="nofollow">
+                                        虚拟账户支付</a>
+                                </dd>
+                    
+                    </dl>
+                    <dl>
+                        <dt><b class="zhinan"></b>配送方式</dt>
+                
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-8.htm" rel="nofollow">
+                                        配送收费标准</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-44.htm" rel="nofollow">
+                                        配送时间</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-7.htm" rel="nofollow">
+                                        货到付款支持城市</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-113.htm" rel="nofollow">
+                                        实体加盟服务商</a>
+                                </dd>
+                    
+                    </dl>
+                    <dl>
+                        <dt><b class="zhinan"></b>售后服务</dt>
+                
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-9.htm" rel="nofollow">
+                                        如何办理退换货</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-10.htm" rel="nofollow">
+                                        如何退换货</a>
+                                </dd>
+                    
+                        <dd>
+                            <a onclick="openQYSdk()" style="cursor: pointer;" rel="nofollow">联系客服</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><b class="zhinan"></b>关于我们</dt>
+                
+                                <dd>
+                                    <a href="https://www.gjw.com/jituan/default.html" rel="nofollow">
+                                        了解购酒网</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-45.htm" rel="nofollow">
+                                        招兵买马</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-18.htm" rel="nofollow">
+                                        联系我们</a>
+                                </dd>
+                    
+                                <dd>
+                                    <a href="https://www.gjw.com/help/show-id-20.htm" rel="nofollow">
+                                        隐私声明</a>
+                                </dd>
+                    
+                        <dd>
+                            <a href="/linkShowList.htm">友情链接</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>合作共赢</dt>
+                        <dd>
+                            <a href="https://www.gjw.com/Brand.htm"><font color="yellow">品牌馆</font></a>
+                        </dd>
+                        <dd>
+                            <a href="https://www.gjw.com/help/caigou.htm" rel="nofollow"><font color="yellow">
+                                大客户采购 new</font></a>
+                        </dd>
+                        <dd>
+                            <a href="https://www.gjw.com/help/tuiguang.htm" rel="nofollow"><font color="yellow">
+                                网站推广 new</font></a>
+                        </dd>
+                        <dd>
+                            <a href="https://www.gjw.com/help/hezuo.htm" rel="nofollow"><font color="yellow">
+                                供应商供货 new</font></a>
+                        </dd>
+                         <dd>
+                            <a href="https://www.gjw.com/help/laojiu" rel="nofollow"><font color="yellow">
+                                老酒鉴真及回购 new</font></a>
+                        </dd>
+                      
+                    </dl>
+                </div>
+            </div>
+            <div class="mid_box copyright">
+                <div id="pFriendlink1" class="frendLinkBox">
+                    <div class="tempWrap" style="overflow:hidden; position:relative; height:32px">
+                        <ul class="friendLinkList" style="height: 160px; position: relative; padding: 0px; margin: 0px; top: -96px;">
+                             <li class="clone" style="height: 32px;">
+                                       <a href="http://brand.gjw.com/">酒水知识</a><span>|</span>
+                                       <a href="http://bbs.gjw.com/">购酒论坛</a><span>|</span>
+                                       <a href="http://www.gjw.com/brand/maotai.htm">茅台</a><span>|</span>
+                                       <a href="http://www.jiutw.com">中国酒投网</a><span>|</span>
+                                       <a href="http://www.1zw.com">9块9包邮</a><span>|</span>
+                                       <a href="http://mingjiu.3158.cn/">酒水加盟</a><span>|</span>
+                                       <a href="http://china.globrand.com">品牌加盟网</a><span>|</span>
+                                       <a href="http://www.zhaoshangbao.com">建材加盟</a><span>|</span>
+                                       <a href="http://www.shaojiu.com">烧酒网</a><span>|</span>
+                                       <a href="http://hao.qudao.com/">商机网 </a><span>|</span>
+                                       <a href="http://guangzhou.anjuke.com">广州房产信息网</a><span>|</span>
+                                       <a href="http://www.youdaili.net/">代理ip</a><span>|</span>
+                                       <a href="http://faq.s.cn/">名鞋库</a><span>|</span>
+                                       <a href="http://www.easeeyes.com/">隐形眼镜</a><span>|</span>
+                                       <a href="http://www.9928.tv/ ">美酒网</a><span>|</span>
+                                       <a href="http://www.dv37.com/">创业</a><span>|</span>
+                                       <a href="http://www.jutubao.com/ddny/">订单农业</a><span>|</span>
+                                       <a href="http://liaocheng.ganji.com">聊城赶集网</a><span>|</span>
+                                       <a href="http://www.jianiang.cn">中国酒业新闻网</a><span>|</span>
+                                       <a href="http://itunes.apple.com/cn/app/id1185762879">购酒网app</a><span>|</span>
+                                       <a href="http://www.puercn.com/">普洱茶</a><span>|</span>
+                                       <a href="http://www.gjw.com/">买酒网</a><span>|</span>
+                                       <a href="http://www.9998.tv/">白酒招商</a><span>|</span>
+                                       <a href="http://www.9928.tv/">酒代理</a><span>|</span>
+                                       <a href="https://www.gjw.com/linkShowList.htm">更多</a><span>|</span>
+                            </li>
+
+                        </ul></div>
+                </div>
+                <p>
+                    Copyright® 2009-2020 gjw.com, All Rights Reserved 	购酒网(上海)供应链管理有限公司   版权所有
+                </p>
+                <div class="authentication">
+                    <a class="beian" href="http://www.miibeian.gov.cn" rel="nofollow"></a>
+                    <a class="depart" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702000287" rel="nofollow"></a>
+                    <a class="gsxz" href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&serial=9031000020160415220120000000584000-SAIC_SHOW_310000-20120216155829988069&signData=MEQCIHdFdWHpPbko0f8zieSgVzkIGrx30wLu9nu+i+tifLCeAiBTuBq9FLb8/jjnUfw7sAmd0Fy7VubSJ3TE9MMccdyWJg==" rel="nofollow"></a>
+					 <a style="margin-left: 10px;background-position: -360px 0;" href="http://scjgj.sh.gov.cn/platform/survey/step1_phone" rel="nofollow"></a>
+					<!--<a style="background: white;"  class="1" target="_blank"  rel="nofollow"  href="http://scjgj.sh.gov.cn/platform/survey/step1_phone">
+                        <img src="__PUBLIC__static/Picture/gsj_wp.jpg" alt=""  style="cursor: pointer;   width: 80px;">
+                    </a>-->
+				
+                </div>
+            </div>
+    </div>
+    <!--尾部-e-->
+
+    <!--右侧导航s-->
+    <div id="RightNavigation" class="rightFixedBar">
+        <div class="rightFixedBar_inner">
+            <a   id="righthyzx" href='https://order.gjw.com/UserCenter/MyOrder.html' target="_blank"
+                    class="rb_btn rb_Center" rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont mine">&#xe615;</span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">会员中心</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a><a href="https://order.gjw.com/order/Cart.html" rel="nofollow" class="rb_btn rb_Center"
+                    rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont cart">&#xe60d;</span> 购<br />
+                    物<br />
+                    车
+                </div>
+            </a>
+            <div id="shopping_poppup" class="shopping_poppup" style="display: none;">
+                <a class="shopping_poppup_a" href="https://order.gjw.com/order/Cart.htm" rel="nofollow">去购物车结算</a>
+                <span class="shopping_poppup_onoff"></span>
+                <div class="shopping_poppup_tab">
+                </div>
+            </div>
+            <a id="rightyhq" href="https://order.gjw.com/UserCenter/MyVoucher.html"    target="_blank"
+                    class="rb_btn rb_Center" rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont gerenzhongxinyouhuiquan">&#xe619;</span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">我的优惠券</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a><a id="rightsc" href="https://order.gjw.com/UserCenter/MyFav.html"   target="_blank"
+                    class="rb_btn rb_Center" rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont 31shoucang">&#xe60f;</span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">我的收藏</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a>
+            <div href="" class="rb_btn rb_Center">
+                <div class="footer_iconBox">
+                    <span class="iconfont erweima">&#xe614;</span>
+                </div>
+                <div class="iconBox_tips tips_qrcode">
+                    <div class="tips_imgBox">
+                        <a href="">
+                            <img src="__PUBLIC__static/Picture/app.png" alt="">
+                        </a>
+                    </div>
+                    <span class="tips_arrow">◆</span>
+                </div>
+            </div>
+
+            <div href="" class="rb_btn rb_Center">
+                <div class="footer_iconBox">
+                    <span class="iconfont zan">&#xe618;</span>
+                </div>
+                <div class="iconBox_tips tips_zan">
+                    <div class="tips_imgBox" id="tips_imgBox">
+
+                        <a href="https://www.gjw.com/product/item-id-6129.htm" rel="nofollow">
+                            <img src="__PUBLIC__static/Picture/6d50583db694401b9dc854cd29e053dd.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <span class="tips_arrow">◆</span>
+                </div>
+            </div>
+
+            <a onclick="openQYSdk()" class="rb_btn rb_Center"
+                rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont kefu">&#xe613;</span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">在线客服</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a><a href="https://order.gjw.com/FeedBack/default.htm" class="rb_btn rb_Center"
+                style="margin-top: 70px;" rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont edit">&#xe61a;</span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">用户反馈</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a><a href="" class="rb_btn rb_Center" id="rightBar_backTop">
+                <div class="footer_iconBox">
+                    <span class="iconfont fanhui3">&#xe60a;</span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">返回顶部</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a>
+        </div>
+ 
+
+  
+    <div class="coupon-wrap" id="coupon-wrap" style="display: none">
+          <h3 class="jdm-tbar-panel-header J-panel-header">
+        <span class="title" clstag="shangpin|keycount|cebianlan_shangpin_coupon|title">
+            <i></i>
+            <em class="title">优惠券</em>
+        </span>
+        <span class="close-panel J-close"></span>
+    </h3>
+        <div class="coupon-type">可领取的券</div>
+        <div class="coupon-empty usable_conpon_title" style="display: none" id="nocompon">
+            <p>暂无可领的优惠券</p>
+        </div>
+
+        <div id="coupon-all" data-templateid="couponlist"></div>
+
+
+
+
+        <script id="couponlist" type="text/x-easy-template">
+                     <#if (data != null)>
+                     <#list data as list>
+                    <div class="coupon-item sm dong" id="sc_1" >
+                     <div class="item-wrap">
+                     <div class="coupon-price">
+                        <span class="token">￥</span><span class="coupon-val">${list.Value}</span>
+                        <span class="coupon-name">${list.Name}</span>
+                     </div>
+
+                    <div class="coupon-info">
+                        <span class="condition" title="">满${list.LimitMoney}元可用</span>                      
+                    </div>
+                      <div class="coupon-seal" id="getyiling-${list.VID}" style=" display:none"></div>
+                    <a class="btn-get" onclick="getCode(${list.VID});" href="javascript:;">立即领取</a>
+                    <p class="coupon-time">有效期${list.strTime}至${list.endTime}</p>                                  
+                   </div>
+                     </div>
+                     </#list>
+                      </#if>                                
+
+        </script>
+
+        
+
+
+
+        <div class="coupon-type user_conpon_title">已领取的券</div>
+
+        <div id="coupon-have" data-templateid="havecoupon"></div>
+
+        <script id="havecoupon" type="text/x-easy-template">
+                    <#if (data != null)>
+                     <#list data as list>
+              <div class="coupon-item sm dong ">
+                <div class="item-wrap">
+                    <div class="coupon-term"></div>
+                    <div class="coupon-price">
+                        <span class="token">￥</span><span class="coupon-val">${list.Value}</span>
+                        <span class="coupon-name">${list.Name}</span>
+                    </div>
+
+
+                    <div class="coupon-info">
+                        <span class="condition" title="">满${list.LimitMoney}元可用</span>
+                        <p title=""></p>
+                    </div>
+                    <p class="coupon-time">有效期${list.strTime}至${list.endTime}</p>
+                    <div class="coupon-seal" ></div>
+                    <a class="btn-get" href="https://www.gjw.com/search.htm?yhqID=${list.VouchersCodeId}"  target="_black">立即使用</a>
+
+                </div>
+            </div>
+                    </#list>
+                      </#if>     
+        </script>
+
+    </div>
+
+    <!--右侧导航e-->
+
+    
+    <style>
+        .ksy
+        {
+            display: none;
+        }
+    </style>
+
+    <script src="Scripts/swiper.min.js"></script>
+    <script src="Scripts/jquery.lazyload.js"></script>
+
+    <script src="Scripts/layer.js"></script>
+
+    <script src="Scripts/order_index.js"></script>
+    <script src="Scripts/main.js"></script>
+<!--
+    <script type="text/javascript">
+        //SY小能客服
+
+        NTKF_PARAM = {
+            siteid: "kf_9250", 	                //企业ID，为固定值，必填
+            settingid: "kf_9250_1462524671271", //接待组ID，为固定值，必填kf_9250_1462522749545
+            uid: gj_User.id, 	                        //用户ID，未登录可以为空，但不能给null，uid赋予的值显示到小能客户端上
+            uname: gj_User.Name + gj_User.mob, 	            //用户名，未登录可以为空，但不能给null，uname赋予的值显示到小能客户端上
+            isvip: "0",                         //是否为vip用户，0代表非会员，1代表会员，取值显示到小能客户端上
+            userlevel: gj_User.levelId  	        //网站自定义会员级别，0-N，可根据选择判断，取值显示到小能客户端上
+        }
+    </script>
+
+    <script type="text/javascript" src="Scripts/ntkfstat.js" charset="utf-8"></script>
+    -->
+    <script>
+
+        jQuery(document).ready(function ($) {
+            "use strict";
+            $('#coupon-wrap').perfectScrollbar();
+            var login = $("#login");
+            login.bind('DOMNodeInserted', function (e) {
+                //alert('element now contains: ' + $(e.target).html());
+                var strcont = $(e.target).html();
+                if (strcont.toLowerCase().indexOf('exit') > -1)
+                {
+                    ysf('config', {
+                        uid: gj_User.id==0?'':gj_User.id,  // 用户Id
+                        name: gj_User.Name + gj_User.mob,          // 用户名称
+                        email: '', // 用户邮箱
+                        mobile: gj_User.mob  // 用户电话
+                    })
+                }
+            });
+        });
+
+        function showCoupon(proid, bandid, parentid) {
+            var display = $('.coupon-wrap').css('display');
+            if (display == 'block') {
+                $(".coupon-wrap").css("display", "none");
+                $("#RightNavigation").removeClass("width320");
+            }
+            else {
+
+                $(".coupon-wrap").css("display", "block");
+                $("#RightNavigation").addClass("width320");
+
+                $.ajax({
+                    type: "post",
+                    url: "/item/GetCoupon",
+                    data: {
+                        proid: proid,
+                        bandid: bandid,
+                        parentid: parentid
+                    },
+                    async: false,
+                    datatype: "json",
+                    success: function (data) {
+                        var ss = data;
+                        if (data.lsVouchers.length > 0) {
+                            if (data.GetVouchers.length > 0) {
+                                var temobj = $("#couponlist").html();
+                                var x = easyTemplate(temobj, data.GetVouchers).toString();
+                                $("#coupon-all").html(x);
+                            }
+                            else {
+                                $("#nocompon").css("display", "block");
+                            }
+                            if (data.haveVouchers.length > 0) {
+                                var temobj = $("#havecoupon").html();
+                                var y = easyTemplate(temobj, data.haveVouchers).toString();
+                                $("#coupon-have").html(y);
+                            }
+                        }
+                        else {
+                            $(".coupon-wrap").css("display", "block");
+                        }
+                    }
+                })
+            }
+
+        }
+
+        function getCode(Vid) {
+            $.ajax({
+                type: "post",
+                url: "/Activity_Api/GiveCoupons",
+                data: {
+                    VouchersID: Vid
+                },
+                async: false,
+                datatype: "json",
+                success: function (data) {
+                    if (data.Success == 0) {  /*领取成功*/
+                        var ss = "getyiling-" + Vid;
+                        $("#" + ss).css("display", "block");
+                    }
+                    else if (data.Success == 3) {  /*请先登录！*/
+                        ifrmLogin.login(getCode, Vid);
+                    }
+                    else {
+                        layer.msg("提交失败" + data.Message);
+                    }
+
+                }
+            })
+        }
+
+        $(function () {
+            $("img[width!='1200'][class!='imgno']").lazyload({ threshold: 180 });
+
+            $(".close-panel").click(function () {
+                $(".coupon-wrap").css("display", "none");
+                $("#RightNavigation").removeClass("width320")
+
+            })
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-42350784-1']);
+        _gaq.push(['_addOrganic', 'baidu', 'word']);
+        _gaq.push(['_addOrganic', 'baidu', 'kw']);
+        _gaq.push(['_addOrganic', 'baidu', 'wd']);
+        _gaq.push(['_addOrganic', 'baidu', 'q1']);
+        _gaq.push(['_addOrganic', 'baidu', 'q2']);
+        _gaq.push(['_addOrganic', 'baidu', 'q3']);
+        _gaq.push(['_addOrganic', 'baidu', 'q4']);
+        _gaq.push(['_addOrganic', 'baidu', 'q5']);
+        _gaq.push(['_addOrganic', 'baidu', 'q6']);
+        _gaq.push(['_addOrganic', 'baidu', 's']);
+        _gaq.push(['_addOrganic', 'm.baidu', 'word']);
+        _gaq.push(['_addOrganic', 'wap.baidu', 'word']);
+        _gaq.push(['_addOrganic', 'bing', 'q']);
+        _gaq.push(['_addOrganic', 'soso', 'w']);
+        _gaq.push(['_addOrganic', 'yodao', 'q']);
+        _gaq.push(['_addOrganic', 'wap.soso.com', 'key']);
+        _gaq.push(['_addOrganic', '3721', 'name']);
+        _gaq.push(['_addOrganic', 'youdao', 'q']);
+        _gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+        _gaq.push(['_addOrganic', '360so', 'q']);
+        _gaq.push(['_addOrganic', '360sou', 'q']);
+        _gaq.push(['_addOrganic', 'vnet', 'kw']);
+        _gaq.push(['_addOrganic', 'sogou', 'query']);
+        _gaq.push(['_addOrganic', 'ucweb', 'keyword']);
+        _gaq.push(['_addOrganic', 'ucweb', 'word']);
+        _gaq.push(['_addOrganic', '114so', 'kw']);
+        _gaq.push(['_addOrganic', 'glb.uc.cn', 'keyword']);
+        _gaq.push(['_addOrganic', 'so.com', 'q']);
+        _gaq.push(['_setDomainName', 'gjw.com']);
+        _gaq.push(['_addIgnoredRef', 'gjw.com']);
+        _gaq.push(['_addIgnoredRef', 'goujiuwang.com']);
+        _gaq.push(['_trackPageview']);
+        _gaq.push(['_trackTrans']);
+        _gaq.push(['_trackPageLoadTime']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <p style="display: none">
+        <script src="Scripts/z_stat.js 
+
+"
+            language="JavaScript"></script>
+    </p>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?f45b9c2a3772066fdf84b38506d4920f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <script>
+        (function (w, d, n, a, j) {
+            w[n] = w[n] || function () {
+                (w[n].a = w[n].a || []).push(arguments);
+            };
+            j = d.createElement('script');
+            j.async = true;
+            j.src = 'https://qiyukf.com/script/04c0360b87f790ebd73d87f572b39d27.js';
+            d.body.appendChild(j);
+        })(window, document, 'ysf');
+
+        ysf('config', {
+            uid: gj_User.id==0?'':gj_User.id,  // 用户Id
+            name: gj_User.Name + gj_User.mob,          // 用户名称
+            email: '', // 用户邮箱
+            mobile: gj_User.mob  // 用户电话
+        })
+
+        var isSdkReady = false;
+        ysf('onready', function () {
+            isSdkReady = true;
+        })
+
+        window.openQYSdk = function () {
+            if (isSdkReady) {
+                ysf('open');
+            } else {
+                alert('sdk尚未加载成功，请稍后再试');
+            }
+        }
+    </script>
+	<!-- templateId表示自定义会话邀请的模板标识 -->
+	<!-- YOUR CODE HERE -->
+
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+{include file="Common/common" /}
+
+<block name="main">
+<style type="text/css">
+	#backindex { background: #e41635 }/* 高亮选中颜色 */
+</style>
+	<div class="ibody">
+	  {include file="Common/navheader"/} <!--顶部-->
+	  
+	  <article>
+	    <div class="banner">
+	      <ul class="texts">
+	        <p>The best life is use of willing attitude, a happy-go-lucky life. </p>
+	        <p>最好的生活是用心甘情愿的态度，过随遇而安的生活。</p>
+	      </ul>
+	    </div>
+	    
+	    
+	    <div class="bloglist">
+	      <h2>
+	        <p><span>推荐</span>文章</p>
+	      </h2>
+	      
+	      {volist name="datalist" id="vo"}
+	      <div class="blogs">
+	        <h3><a href="{:url('blogcontent',array('id'=>$vo['id']))}">{$vo.title}</a></h3>
+	        <figure><img src="{$vo.image}" ></figure>
+	        <ul>
+	          <p>{$vo.abstract}......</p>
+	          <a href="{:url('blogcontent',array('id'=>$vo['id']))}" class="readmore">阅读全文&gt;&gt;</a>
+	        </ul>
+	        <p class="autor"><span>作者：{$vo.author}</span><span>分类：【<a href="/">{$vo['typeid']}</a>】</span><span>浏览（<a href="/">459</a>）</span></p>
+	        <div class="dateview">{$vo.time}</div>
+	      </div>
+	      {/volist}
+	     
+	    </div>
+	    
+	     <div style="padding-top:25px;">
+              <div class="page">{$datalist->render()|raw}</div>
+         </div>
+	  </article>
+	  
+	  
+	
+	
+	
+	  <aside>
+	    <div class="avatar"><a href="about.html"><span>切切歆语</span></a></div>
+	    <div class="topspaceinfo">
+	      <h1>快乐到家,笑傲江湖</h1>
+	      <p>于千万人之中，我遇见了我所遇见的人....</p>
+	    </div>
+	    <div class="about_c">
+	      <p>网名：切切歆语 | DickyQie</p>
+	      <p>职业：Android、PHP工程师 </p>
+	      <p>籍贯：四川省―泸州市</p>
+	      <p>电话：185********</p>
+	      <p>邮箱：zhangqiem@126.com</p>
+	    </div>
+	    <div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
+	    <div class="tj_news">
+	      <h2>
+	        <p class="tj_t1">最新文章</p>
+	      </h2>
+	      <ul>
+	        <li><a href="">13个能快速开发android的经典项目</a></li>
+	        <li><a href="">PHP处理Ajax请求与Ajax跨域</a></li>
+	        <li><a href="">切切歆语</a></li>
+	        <li><a href="">分享6款优秀的 AR/VR 开源库</a></li>
+	        <li><a href="">Android------个人项目（歆语计算器）</a></li>
+	        <li><a href="">9款超绚丽的HTML5/CSS3应用和动画特效</a></li>
+	        <li><a href="">MySQL数据库安装和Navicat for MySQL配合使用</a></li>
+	        <li><a href="">10个有趣的Javascript和CSS库</a></li>
+	      </ul>
+	      <h2>
+	        <p class="tj_t2">推荐文章</p>
+	      </h2>
+	      <ul>
+	        <li><a href="">13个能快速开发android的经典项目</a></li>
+	        <li><a href="">PHP处理Ajax请求与Ajax跨域</a></li>
+	        <li><a href="">切切歆语</a></li>
+	        <li><a href="">分享6款优秀的 AR/VR 开源库</a></li>
+	        <li><a href="">Android------个人项目（歆语计算器）</a></li>
+	        <li><a href="">9款超绚丽的HTML5/CSS3应用和动画特效</a></li>
+	        <li><a href="">MySQL数据库安装和Navicat for MySQL配合使用</a></li>
+	        <li><a href="">10个有趣的Javascript和CSS库</a></li>
+	      </ul>
+	    </div>
+	    
+	    <div class="links">
+	      <h2>
+	        <p>友情链接</p>
+	      </h2>
+	      <ul>
+	        <li><a target="_blank" href="http://blog.csdn.net/dickyqie">CSDN个人博客</a></li>
+	        <li><a target="_blank" href="http://www.cnblogs.com/zhangqie/">个人博客园</a></li>
+	        <li><a target="_blank" href="https://github.com/DickyQie">GitHub</a></li>
+	      </ul>
+	    </div>
+	
+	    <div class="copyright">
+	      <ul>
+	        <p> Design by <a href="/">DanceSmile</a></p>
+	        <p>蜀ICP备11002373号-1</p>
+	        </p>
+	     </ul>
+	    </div>
+	  </aside>
+	  {include file="Common/footer"/} <!--顶部-->
+	</div>
+</block>

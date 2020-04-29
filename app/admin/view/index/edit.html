@@ -1,0 +1,97 @@
+{include file="Common/common" /}
+<block name="main">
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        {include file="Common/nav-header"/} <!--顶部-->
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>修改博客内容</h5>
+                </div>
+                <div class="ibox-content">
+                    <form class="form-horizontal m-t " method="post" action="">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">博客类型：</label>
+                            <div class="col-sm-9">
+                                <select id="typeid" name="typeid">
+                                    <option value="0">请选择分类类型</option>
+                                    {volist name="type" id="vo"}
+                                        <option value="{$vo.id}" {if condition="($vo.id eq $data['typeid'])"}selected{/if} >{$vo.type}</option>
+                                    {/volist}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">名称：</label>
+                            <div class="col-sm-3">
+                                <input  type="text" id="title" class="form-control" name="title" value="{$data.title}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">图片链接：</label>
+                            <div class="col-sm-3">
+                                <input  type="text" id="href" class="form-control" name="href" value="{$data.image}">
+                            </div>
+                        </div>
+                     
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">作者：</label>
+                            <div class="col-sm-3">
+                                <input  type="text" id="author" class="form-control" name="author" value="{$data.author}">
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-sm-3 control-label">摘要：</label>
+                            <div class="col-sm-3">
+                            	<textarea class="form-control" id="abstract" name="abstract" rows="6">{$data.abstract}</textarea>
+                            </div>
+                         </div>
+                        
+                         <div  class="form-group">
+                            <label class="col-sm-3 control-label">编辑内容：</label>
+                          	<div class="col-sm-9">
+				    	   		<script id="editor" type="text/plain" name="content" style="width:862px;height:400px;">
+									{$data.content}
+								</script>
+				    	 	</div>
+					    </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-3">
+                                <input type="hidden" name='id' value="{$data['id']}">
+                                <button class="btn btn-primary" type="submit">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--尾部-->
+        {include file="Common/footer"/}
+    </div>
+    <script>
+    
+    	var ue = UE.getEditor('editor');
+        $('form').submit(function(){
+            var name = $('#title').val();
+            var sort = $("#author").val();
+            var type = $("#typeid").val();
+            var abstramt = $("#abstract").val();
+            if(type == 0){
+            	layes.msg('请选择分类',{time:1000});
+            	return;
+            }
+            if(name == ''){
+                layer.msg('请填写名称',{time:1000});
+                return false;
+            }
+            if(author == ''){
+                layer.msg('请填写作者',{time:1000});
+                return false;
+            }
+            if(abstramt == ''){
+            	 layer.msg('请填写摘要',{time:1000});
+                 return false;
+            }
+        });
+    </script>
+</block>
+
